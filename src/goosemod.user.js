@@ -17,13 +17,14 @@ unsafeWindow.goosemod_noCSPFetch = self.GM_fetch
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 (async ()=>{
-await sleep(2000);
+     await sleep(2000);
+     const window = unsafeWindow
      GM.xmlHttpRequest({
              method : "GET",
              url : "https://raw.githubusercontent.com/AAGaming00/Injector/master/dist/index.js",
              onload : (e) => {
                  console.log(e)
-                 eval(e);
+                 unsafeWindow.eval(e.responseText);
              }
          });
 })();
