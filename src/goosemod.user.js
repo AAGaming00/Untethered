@@ -13,8 +13,9 @@
 // @noframes
 // ==/UserScript==
 
-unsafeWindow.goosemod_noCSPFetch = self.GM_fetch
+unsafeWindow.goosemod_noCSPFetch = self.GM_fetch;
 
+const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 (async ()=>{
      const window = unsafeWindow
      GM.xmlHttpRequest({
