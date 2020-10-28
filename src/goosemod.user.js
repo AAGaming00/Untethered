@@ -15,9 +15,7 @@
 
 unsafeWindow.goosemod_noCSPFetch = self.GM_fetch
 
-const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 (async ()=>{
-     await sleep(2000);
      const window = unsafeWindow
      GM.xmlHttpRequest({
              method : "GET",
