@@ -1,3 +1,3 @@
 # GooseMod Untethered
 
-Untethered injector for GooseMod, desktop client and should work with a browser extension which inserts the JS into the Discord webapp.
+Untethered injector for GooseMod, desktop client and should work with a browser extension which inserts the JS into the Discord webapp. For web, use the userscript.
